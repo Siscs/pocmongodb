@@ -25,7 +25,7 @@ namespace Siscs.MongoDB.Api.Infrastructure.Data.MongoContext
                 new Produto
                 {
                     Nome = "Caneta bic azul",
-                    CategoriaId = null, // canetas
+                    Categoria = null, // canetas
                     Descricao = "Caneta esferográfica azul",
                     Imagem = null,
                     Valor = 3.20M
@@ -33,7 +33,7 @@ namespace Siscs.MongoDB.Api.Infrastructure.Data.MongoContext
                 new Produto
                 {
                     Nome = "Caneta bic vermelha",
-                    CategoriaId = null, // canetas,
+                    Categoria = null, // canetas,
                     Descricao = "Caneta esferográfica vermelha",
                     Imagem = null,
                     Valor = 3.50M
@@ -41,7 +41,7 @@ namespace Siscs.MongoDB.Api.Infrastructure.Data.MongoContext
                 new Produto
                 {
                     Nome = "Caneta bic preta",
-                    CategoriaId = null, // canetas,
+                    Categoria = null, // canetas,
                     Descricao = "Caneta esferográfica preta",
                     Imagem = null,
                     Valor = 3.15M
@@ -49,7 +49,7 @@ namespace Siscs.MongoDB.Api.Infrastructure.Data.MongoContext
                 new Produto
                 {
                     Nome = "Caderno brochura 50fls",
-                    CategoriaId = null, // cadernos,
+                    Categoria = null, // cadernos,
                     Descricao = "Caderno tipo brochura capa dura 50fls",
                     Imagem = null,
                     Valor = 24.15M
@@ -57,7 +57,7 @@ namespace Siscs.MongoDB.Api.Infrastructure.Data.MongoContext
                 new Produto
                 {
                     Nome = "Caderno brochura 100fls",
-                    CategoriaId = null, // cadernos,
+                    Categoria = null, // cadernos,
                     Descricao = "Caderno tipo brochura capa dura 100fls",
                     Imagem = null,
                     Valor = 48.73M
@@ -65,7 +65,7 @@ namespace Siscs.MongoDB.Api.Infrastructure.Data.MongoContext
                 new Produto
                 {
                     Nome = "Caderno brochura 10 materias 500fls",
-                    CategoriaId = null, // cadernos,
+                    Categoria = null, // cadernos,
                     Descricao = "Caderno tipo brochura capa dura 500fls 10 materias",
                     Imagem = null,
                     Valor = 75.32M

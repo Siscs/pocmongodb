@@ -15,8 +15,11 @@ namespace Siscs.MongoDB.Api.Mappers
             {
                 Id = produto.Id,
                 Nome = produto.Nome,
-                CategoriaId = produto.CategoriaId,
-                Categoria = produto.Categoria.ToCategoriaDto(),
+                Categoria = produto.Categoria is null ? null : new ProdutoCategoriaDto
+                {
+                   Id = produto.Categoria.Id,
+                   Descricao = produto.Categoria.Descricao
+                }, 
                 Descricao = produto.Descricao,
                 Valor = produto.Valor
             };
@@ -28,7 +31,11 @@ namespace Siscs.MongoDB.Api.Mappers
             {
                 Id = dto.Id,
                 Nome = dto.Nome,
-                CategoriaId = dto.CategoriaId,
+                Categoria = dto.Categoria is null ? null : new ProdutoCategoria
+                {
+                    Id = dto.Categoria.Id,
+                    Descricao = dto.Categoria.Descricao
+                },
                 Descricao = dto.Descricao,
                 Valor = dto.Valor
             };
@@ -38,7 +45,11 @@ namespace Siscs.MongoDB.Api.Mappers
             return new Produto
             {
                 Nome = dto.Nome,
-                CategoriaId = dto.CategoriaId,
+                Categoria = dto.Categoria is null ? null : new ProdutoCategoria
+                {
+                    Id = dto.Categoria.Id,
+                    Descricao = dto.Categoria.Descricao
+                },
                 Descricao = dto.Descricao,
                 Valor = dto.Valor
             };
